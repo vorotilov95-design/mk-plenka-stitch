@@ -159,18 +159,21 @@
 <body class="bg-background text-on-surface font-body-md overflow-x-hidden">
 <main>
 <!-- Hero Section -->
-<section class="relative px-gutter py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto overflow-hidden">
+<section class="relative px-gutter pt-10 pb-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto overflow-hidden">
 <div class="flex flex-col md:flex-row items-center gap-12 relative z-10">
 <div class="w-full reveal text-center">
-<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 uppercase">
-                        ПРЕДЗАКАЗ МК ПЛЕНКА
+<div class="mx-auto mb-7 flex max-w-[360px] flex-col items-center">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase leading-[1.05] mb-4">
+<span class="block">ПРЕДЗАКАЗ</span>
+<span class="block">МК ПЛЕНКА</span>
                     </h1>
-<p class="inline-block px-4 py-2 bg-secondary-fixed text-on-secondary-fixed rounded-full font-headline-md text-[20px] leading-tight mb-3">
+<p class="inline-flex px-5 py-2.5 bg-secondary-fixed text-on-secondary-fixed rounded-full font-headline-md text-[20px] leading-tight mb-3 shadow-sm">
                         Сегодня скидка 67%
                     </p>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+<p class="font-body-md text-body-md text-on-surface-variant">
                         Старт мастер-класса 21 июля
                     </p>
+</div>
 <div class="w-full reveal delay-200 mb-8">
 <div class="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl float-animation max-w-md mx-auto">
 <img class="w-full h-full object-cover" data-alt="A professional, warm lifestyle portrait of Kristina, a female interior expert with a friendly smile, holding a roll of high-quality decorative vinyl film. She is in a bright, modern, minimalist kitchen with soft morning sunlight streaming through the window, highlighting pastel green cabinets and a marble-effect countertop. The aesthetic is clean, sophisticated, and editorial, reflecting the 'Interior Harmony' style." src="assets/image-01.jpg"/>
@@ -180,32 +183,33 @@
 <h2 class="font-headline-md text-headline-md text-primary mb-4 max-w-lg mx-auto">
                         Обновите кухню и любую мебель пленкой за выходные
                     </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg mx-auto">
-                        МК пленка - это пошаговая инструкция для новичков в видеоформате + ссылки и артикулы на проверенные пленки.
-                    </p>
+<ul class="font-body-md text-body-md text-on-surface-variant mb-10 max-w-lg mx-auto text-left space-y-3">
+<li class="flex gap-3">
+<span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary-fixed text-primary text-sm font-bold">1</span>
+<span>Пошаговая инструкция в видеоуроках для новичков.</span>
+</li>
+<li class="flex gap-3">
+<span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary-fixed text-primary text-sm font-bold">2</span>
+<span>Ссылки на проверенные антивандальные пленки.</span>
+</li>
+<li class="flex gap-3">
+<span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary-fixed text-primary text-sm font-bold">3</span>
+<span>Доступ навсегда.</span>
+</li>
+<li class="flex gap-3">
+<span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary-fixed text-primary text-sm font-bold">4</span>
+<span>После открытия уроков <strong class="font-bold text-primary">ЦЕНА ВЫРАСТЕТ</strong>.</span>
+</li>
+</ul>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
 <a class="px-8 py-4 bg-primary text-on-primary rounded-xl font-headline-md text-center hover:bg-button-hover transition-colors shadow-sm" href="#pricing">
                             Получить со скидкой
-                        </a>
-<a class="px-8 py-4 border border-primary text-primary rounded-xl font-headline-md text-center hover:bg-surface-variant transition-colors" href="#program">
-                            Посмотреть программу
                         </a>
 </div>
 </div>
 </div>
 <!-- Decorative circle -->
 <div class="absolute -top-20 -right-20 w-80 h-80 bg-surface-alt/40 rounded-full blur-3xl -z-0"></div>
-</section>
-<!-- Pre-sale Banner -->
-<section class="bg-surface-container py-12 reveal">
-<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-<p class="font-body-lg text-body-lg text-primary max-w-2xl">
-                    Сейчас можно забрать МК «Пленка» по предпродажной цене. После открытия уроков ЦЕНА ВЫРАСТЕТ.
-                </p>
-<a class="text-primary font-bold underline underline-offset-8 hover:text-button-hover transition-colors" href="#pricing">
-                    Выбрать тариф
-                </a>
-</div>
 </section>
 <!-- Cases Section -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto px-gutter" id="cases">
@@ -215,67 +219,102 @@
                     Обновили кухню за 2100 руб. Пленка держится уже 2 года
                 </p>
 </div>
-<div class="relative reveal">
-<div aria-label="Слайдер с фотографиями кейса кухни до и после" class="flex overflow-x-auto gap-3 md:gap-6 pb-6 no-scrollbar snap-x snap-mandatory scroll-smooth" data-case-slider>
+<div class="relative reveal" data-case-carousel>
+<div aria-label="Слайдер с фотографиями кейса кухни до и после" class="flex items-start overflow-x-auto gap-3 md:gap-6 pb-3 no-scrollbar snap-x snap-mandatory scroll-smooth" data-case-slider>
 <article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start">
-<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
+<div class="relative aspect-[3/4] h-full rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
 <img class="w-full h-full object-cover" data-alt="Кухня до обновления пленкой: красные и деревянные фасады, старый фартук и темная техника." src="assets/cases/kitchen-case-before.jpg"/>
 <span class="absolute top-3 left-3 px-3 py-2 bg-black/55 text-white text-label-sm font-label-sm rounded-lg">ДО</span>
 </div>
 </article>
 <article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start">
-<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
+<div class="relative aspect-[3/4] h-full rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
 <img class="w-full h-full object-cover" data-alt="Кухня после обновления пленкой: светлые фасады, столешница под дерево, аккуратный фартук и спокойный интерьер." src="assets/cases/kitchen-case-after.jpg"/>
 <span class="absolute top-3 left-3 px-3 py-2 bg-primary text-white text-label-sm font-label-sm rounded-lg">ПОСЛЕ</span>
 <img class="absolute left-2 right-2 bottom-3 w-[calc(100%-16px)] rounded-lg bg-white shadow-lg" data-alt="Скриншот комментария: два года антивандальная пленка на фасадах и столешнице, и ничего ей." src="assets/cases/kitchen-case-comment-overlay.jpg"/>
 </div>
 </article>
-<article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start rounded-2xl bg-white border border-border-light p-2 shadow-sm">
-<div class="aspect-[3/4] rounded-xl bg-surface-container-low overflow-hidden flex items-center justify-center">
+<article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start">
+<div class="aspect-[3/4] h-full rounded-2xl bg-white border border-border-light overflow-hidden flex items-center justify-center shadow-sm">
 <img class="w-full h-full object-contain" data-alt="Скриншот переписки о том, что нахлест почти не видно и за два года пленка не отклеилась." src="assets/cases/kitchen-case-comment-2.jpg"/>
 </div>
 </article>
 <article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start">
-<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
+<div class="relative aspect-[3/4] h-full rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
 <img class="w-full h-full object-cover" data-alt="Дополнительный ракурс обновленной кухни: светлые фасады, столешница под дерево и фартук под плитку." src="assets/cases/kitchen-case-detail.jpg"/>
 <span class="absolute top-3 left-3 px-3 py-2 bg-white/90 text-primary text-label-sm font-label-sm rounded-lg">ДЕТАЛИ</span>
 </div>
 </article>
 <article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start">
-<div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
+<div class="relative aspect-[3/4] h-full rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
 <img class="w-full h-full object-cover" data-alt="Обеденная зона рядом с обновленной кухней, спокойная стена и стол после переделки." src="assets/cases/kitchen-case-dining.jpg"/>
 <span class="absolute top-3 left-3 px-3 py-2 bg-white/90 text-primary text-label-sm font-label-sm rounded-lg">ИНТЕРЬЕР</span>
 </div>
 </article>
 <article class="w-[58vw] max-w-[290px] md:w-[320px] md:max-w-none flex-none snap-start">
-<div class="aspect-[3/4] rounded-2xl bg-primary text-on-primary shadow-sm p-5 flex flex-col justify-between">
-<div>
-<span class="inline-flex px-3 py-1 rounded-full bg-white/15 text-[11px] font-bold uppercase tracking-wide mb-4">Лайфхаки</span>
-<h3 class="font-headline-md text-[20px] leading-tight font-bold mb-4">Бюджетные лайфхаки в этом ремонте</h3>
-<ul class="space-y-2 text-[13px] leading-snug text-white/88">
-<li>Фасады обклеены пленкой.</li>
-<li>Столешница обклеена пленкой.</li>
-<li>Фартук из ПВХ-плиток.</li>
-<li>На стенах самодельная декоративная штукатурка.</li>
+<div class="aspect-[3/4] h-full rounded-2xl bg-surface-container text-on-surface shadow-sm p-5 flex flex-col justify-center border border-border-light">
+<h3 class="font-headline-md text-[20px] leading-tight font-bold mb-5 text-primary">Бюджетные лайфхаки в этом ремонте</h3>
+<ul class="space-y-3 text-[13px] leading-snug text-on-surface-variant">
+<li class="flex gap-2">
+<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+<span>Фасады обклеены пленкой.</span>
+</li>
+<li class="flex gap-2">
+<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+<span>Столешница обклеена пленкой.</span>
+</li>
+<li class="flex gap-2">
+<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+<span>Фартук из ПВХ-плиток.</span>
+</li>
+<li class="flex gap-2">
+<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary"></span>
+<span>На стенах самодельная декоративная штукатурка, 500 рублей/мешок.</span>
+</li>
 </ul>
-</div>
-<div class="rounded-xl bg-white/12 p-3">
-<div class="text-[11px] uppercase tracking-wide text-white/65">Стоимость материала</div>
-<div class="font-headline-md text-[24px] leading-none font-bold mt-1">500 руб/мешок</div>
-</div>
 </div>
 </article>
 </div>
 <button aria-label="Следующий слайд кейса" class="absolute right-0 top-1/2 z-20 -translate-y-1/2 translate-x-2 w-10 h-10 rounded-full bg-white/90 text-primary shadow-lg border border-border-light flex items-center justify-center hover:bg-white transition-colors" data-case-next type="button">
 <span class="material-symbols-outlined">chevron_right</span>
 </button>
-<div class="flex justify-center gap-2 mt-1" data-case-dots aria-hidden="true">
+<div class="flex justify-center gap-2 -mt-1" data-case-dots aria-hidden="true">
 <span class="block h-1.5 w-5 rounded-full bg-primary" data-case-dot></span>
 <span class="block h-1.5 w-1.5 rounded-full bg-outline-variant" data-case-dot></span>
 <span class="block h-1.5 w-1.5 rounded-full bg-outline-variant" data-case-dot></span>
 <span class="block h-1.5 w-1.5 rounded-full bg-outline-variant" data-case-dot></span>
 <span class="block h-1.5 w-1.5 rounded-full bg-outline-variant" data-case-dot></span>
 <span class="block h-1.5 w-1.5 rounded-full bg-outline-variant" data-case-dot></span>
+</div>
+</div>
+<div class="mt-14 md:mt-20">
+<div class="text-center mb-8 reveal">
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    До/после угловая кухня, <strong class="font-bold text-primary">ПЛЕНКА ДЕРЖИТСЯ 4 ГОДА</strong>. Купили за 4000₽ рулон 15 метров пленки, им обклеили скругленные фасады и столешницу цвет бетон. Белые фасады - это краска.
+                </p>
+</div>
+<div class="relative reveal" data-case-carousel>
+<div aria-label="Слайдер с фотографиями угловой кухни до и после" class="flex items-start overflow-x-auto gap-3 md:gap-6 pb-3 no-scrollbar snap-x snap-mandatory scroll-smooth" data-case-slider>
+<article class="w-[74vw] max-w-[340px] md:w-[420px] md:max-w-none flex-none snap-start">
+<div class="relative aspect-[4/3] h-full rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Угловая кухня до обновления: фиолетовые фасады, старая столешница и фартук." src="assets/cases/remont-kitchen-before.jpg"/>
+<span class="absolute top-3 left-3 px-3 py-2 bg-black/55 text-white text-label-sm font-label-sm rounded-lg">ДО</span>
+</div>
+</article>
+<article class="w-[74vw] max-w-[340px] md:w-[420px] md:max-w-none flex-none snap-start">
+<div class="relative aspect-[4/3] h-full rounded-2xl overflow-hidden bg-surface-variant shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Угловая кухня после обновления: бетонная пленка на скругленных фасадах и столешнице, белые окрашенные фасады." src="assets/cases/remont-kitchen-after.jpg"/>
+<span class="absolute top-3 left-3 px-3 py-2 bg-primary text-white text-label-sm font-label-sm rounded-lg">ПОСЛЕ</span>
+</div>
+</article>
+</div>
+<button aria-label="Следующий слайд второго кейса" class="absolute right-0 top-1/2 z-20 -translate-y-1/2 translate-x-2 w-10 h-10 rounded-full bg-white/90 text-primary shadow-lg border border-border-light flex items-center justify-center hover:bg-white transition-colors" data-case-next type="button">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<div class="flex justify-center gap-2 -mt-1" data-case-dots aria-hidden="true">
+<span class="block h-1.5 w-5 rounded-full bg-primary" data-case-dot></span>
+<span class="block h-1.5 w-1.5 rounded-full bg-outline-variant" data-case-dot></span>
+</div>
 </div>
 </div>
 </section>
@@ -855,58 +894,61 @@
         renderReviews();
 
         // Case slider controls
-        const caseSlider = document.querySelector('[data-case-slider]');
-        const casePrevButton = document.querySelector('[data-case-prev]');
-        const caseNextButton = document.querySelector('[data-case-next]');
-        const caseDots = Array.from(document.querySelectorAll('[data-case-dot]'));
-        let caseDotFrame = null;
+        document.querySelectorAll('[data-case-carousel]').forEach(caseCarousel => {
+            const caseSlider = caseCarousel.querySelector('[data-case-slider]');
+            const casePrevButton = caseCarousel.querySelector('[data-case-prev]');
+            const caseNextButton = caseCarousel.querySelector('[data-case-next]');
+            const caseDots = Array.from(caseCarousel.querySelectorAll('[data-case-dot]'));
+            let caseDotFrame = null;
 
-        function getCaseSlideStep() {
-            if (!caseSlider) return;
-            const firstSlide = caseSlider.querySelector('article');
-            const styles = window.getComputedStyle(caseSlider);
-            const gap = parseFloat(styles.columnGap || styles.gap) || 16;
-            return firstSlide ? firstSlide.getBoundingClientRect().width + gap : caseSlider.clientWidth * 0.8;
-        }
-
-        function updateCaseDots() {
-            if (!caseSlider || !caseDots.length) return;
-            const scrollAmount = getCaseSlideStep();
-            const activeIndex = Math.max(0, Math.min(caseDots.length - 1, Math.round(caseSlider.scrollLeft / scrollAmount)));
-
-            caseDots.forEach((dot, index) => {
-                dot.className = index === activeIndex
-                    ? 'block h-1.5 w-5 rounded-full bg-primary transition-all'
-                    : 'block h-1.5 w-1.5 rounded-full bg-outline-variant transition-all';
-            });
-        }
-
-        function scheduleCaseDotUpdate() {
-            if (caseDotFrame) {
-                window.cancelAnimationFrame(caseDotFrame);
+            function getCaseSlideStep() {
+                if (!caseSlider) return 0;
+                const firstSlide = caseSlider.querySelector('article');
+                const styles = window.getComputedStyle(caseSlider);
+                const gap = parseFloat(styles.columnGap || styles.gap) || 16;
+                return firstSlide ? firstSlide.getBoundingClientRect().width + gap : caseSlider.clientWidth * 0.8;
             }
 
-            caseDotFrame = window.requestAnimationFrame(updateCaseDots);
-        }
+            function updateCaseDots() {
+                if (!caseSlider || !caseDots.length) return;
+                const scrollAmount = getCaseSlideStep();
+                if (!scrollAmount) return;
+                const activeIndex = Math.max(0, Math.min(caseDots.length - 1, Math.round(caseSlider.scrollLeft / scrollAmount)));
 
-        function scrollCaseSlider(direction) {
-            if (!caseSlider) return;
-            const scrollAmount = getCaseSlideStep();
+                caseDots.forEach((dot, index) => {
+                    dot.className = index === activeIndex
+                        ? 'block h-1.5 w-5 rounded-full bg-primary transition-all'
+                        : 'block h-1.5 w-1.5 rounded-full bg-outline-variant transition-all';
+                });
+            }
 
-            caseSlider.scrollBy({
-                left: direction * scrollAmount,
-                behavior: 'smooth'
-            });
-            setTimeout(updateCaseDots, 120);
-            setTimeout(updateCaseDots, 360);
-            setTimeout(updateCaseDots, 720);
-        }
+            function scheduleCaseDotUpdate() {
+                if (caseDotFrame) {
+                    window.cancelAnimationFrame(caseDotFrame);
+                }
 
-        casePrevButton?.addEventListener('click', () => scrollCaseSlider(-1));
-        caseNextButton?.addEventListener('click', () => scrollCaseSlider(1));
-        caseSlider?.addEventListener('scroll', scheduleCaseDotUpdate, { passive: true });
-        caseSlider?.addEventListener('scrollend', updateCaseDots, { passive: true });
-        updateCaseDots();
+                caseDotFrame = window.requestAnimationFrame(updateCaseDots);
+            }
+
+            function scrollCaseSlider(direction) {
+                if (!caseSlider) return;
+                const scrollAmount = getCaseSlideStep();
+
+                caseSlider.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: 'smooth'
+                });
+                setTimeout(updateCaseDots, 120);
+                setTimeout(updateCaseDots, 360);
+                setTimeout(updateCaseDots, 720);
+            }
+
+            casePrevButton?.addEventListener('click', () => scrollCaseSlider(-1));
+            caseNextButton?.addEventListener('click', () => scrollCaseSlider(1));
+            caseSlider?.addEventListener('scroll', scheduleCaseDotUpdate, { passive: true });
+            caseSlider?.addEventListener('scrollend', updateCaseDots, { passive: true });
+            updateCaseDots();
+        });
 
         // Student review preview modal
         const reviewModal = document.querySelector('[data-review-modal]');
