@@ -140,9 +140,42 @@
             display: none;
         }
         .surface-photo {
-            background-image: url("assets/surface-real-collage.jpg");
             background-repeat: no-repeat;
-            background-size: 200% 300%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .surface-facades {
+            background-image: url("assets/cases/remont-kitchen-after.jpg");
+            background-position: 62% 52%;
+        }
+        .surface-countertop {
+            background-image: url("assets/surfaces/countertop.jpg");
+            background-position: 50% 56%;
+        }
+        .surface-backsplash {
+            background-image: url("assets/surfaces/backsplash-kristina.jpg");
+            background-position: 48% 38%;
+        }
+        .surface-wardrobe {
+            background-image: url("assets/surfaces/wardrobe.jpg");
+            background-position: 50% 42%;
+        }
+        .surface-commode {
+            background-image: url("assets/surfaces/commode.jpg");
+            background-position: 50% 45%;
+        }
+        .surface-tile {
+            background-image: url("assets/surfaces/tile.jpg");
+            background-position: 50% 45%;
+        }
+        .surface-door {
+            background-image: url("assets/surfaces/door.jpg");
+            background-position: 50% 38%;
+        }
+        .surface-table {
+            background-image: url("assets/surfaces/table.jpg");
+            background-position: 50% 50%;
         }
         @media (min-width: 768px) {
             .testimonial-card {
@@ -354,49 +387,70 @@
 </section>
 <!-- Surfaces Grid -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto px-gutter">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-12 reveal">Один навык — много поверхностей дома</h2>
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-12 reveal">Куда можно клеить плёнку</h2>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
 <div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
-<div aria-label="Кухонные фасады после оклейки пленкой" class="surface-photo aspect-[3/2]" role="img" style="background-position: 0% 0%;"></div>
-<div class="p-4 md:p-5">
+<div aria-label="Кухонные фасады после оклейки пленкой" class="surface-photo surface-facades aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
 <span class="font-headline-md text-primary">Фасады</span>
-<p class="text-sm text-on-surface-variant mt-1">Ровный матовый слой без замены дверей.</p>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
-<div aria-label="Столешница с каменной пленкой в реальной кухне" class="surface-photo aspect-[3/2]" role="img" style="background-position: 100% 0%;"></div>
-<div class="p-4 md:p-5">
+<div aria-label="Столешница с пленкой под дерево в реальной кухне" class="surface-photo surface-countertop aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
 <span class="font-headline-md text-primary">Столешница</span>
-<p class="text-sm text-on-surface-variant mt-1">Каменный или деревянный эффект без демонтажа.</p>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
-<div aria-label="Кухонный фартук после обновления пленкой под плитку" class="surface-photo aspect-[3/2]" role="img" style="background-position: 0% 50%;"></div>
-<div class="p-4 md:p-5">
+<div aria-label="Кухонный фартук после обновления пленкой под плитку" class="surface-photo surface-backsplash aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
 <span class="font-headline-md text-primary">Фартук</span>
-<p class="text-sm text-on-surface-variant mt-1">Визуально как новая плитка в зоне кухни.</p>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
-<div aria-label="Шкафы с гладкой обновленной поверхностью" class="surface-photo aspect-[3/2]" role="img" style="background-position: 100% 50%;"></div>
-<div class="p-4 md:p-5">
-<span class="font-headline-md text-primary">Шкафы</span>
-<p class="text-sm text-on-surface-variant mt-1">Спокойный цвет и чистая геометрия фасадов.</p>
+<div aria-label="Шкаф-купе после обновления пленкой" class="surface-photo surface-wardrobe aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
+<span class="font-headline-md text-primary">Шкаф-купе</span>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
-<div aria-label="Тумбочка с пленкой под светлое дерево" class="surface-photo aspect-[3/2]" role="img" style="background-position: 0% 100%;"></div>
-<div class="p-4 md:p-5">
-<span class="font-headline-md text-primary">Тумбочка</span>
-<p class="text-sm text-on-surface-variant mt-1">Быстрое обновление небольшой мебели.</p>
+<div aria-label="Комод с пленкой под светлое дерево" class="surface-photo surface-commode aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
+<span class="font-headline-md text-primary">Комод</span>
 </div>
 </div>
 <div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
-<div aria-label="Плитка в ванной после аккуратного обновления пленкой" class="surface-photo aspect-[3/2]" role="img" style="background-position: 100% 100%;"></div>
-<div class="p-4 md:p-5">
+<div aria-label="Плитка в ванной после обновления" class="surface-photo surface-tile aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
 <span class="font-headline-md text-primary">Плитка</span>
-<p class="text-sm text-on-surface-variant mt-1">Чистый светлый вид без грязных ремонтных работ.</p>
 </div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
+<div aria-label="Дверь после обновления пленкой" class="surface-photo surface-door aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
+<span class="font-headline-md text-primary">Дверь</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm border border-border-light overflow-hidden reveal">
+<div aria-label="Стол после обновления пленкой" class="surface-photo surface-table aspect-[3/2]" role="img"></div>
+<div class="p-4 md:p-5 min-h-[72px] flex items-center">
+<span class="font-headline-md text-primary">Стол</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Film Tests Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container text-on-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="max-w-3xl mx-auto text-center reveal">
+<h2 class="font-headline-lg text-primary mb-6">
+<span class="block text-[58px] md:text-[88px] leading-[0.9] font-bold">50 пленок</span>
+<span class="mt-4 block text-headline-lg">мы купили и протестировали</span>
+</h2>
+<p class="font-body-lg text-on-surface-variant">Чтобы вы не тратили деньги на некачественную пленку, которая рвется, отклеивается, не выдерживает кипяток или не подходит для столешниц.</p>
+</div>
+<div class="mt-10 reveal delay-100">
+<img class="w-full rounded-2xl border border-border-light bg-white object-cover shadow-xl" data-alt="Кристина сидит среди множества рулонов декоративной пленки и образцов материалов после тестов для мастер-класса" loading="lazy" src="assets/proof/film-tests-kristina.jpg"/>
 </div>
 </div>
 </section>
@@ -540,18 +594,6 @@
 <div class="testimonial-card aspect-[9/16] bg-white rounded-2xl shadow-sm border border-border-light flex-none overflow-hidden snap-start">
 <img class="w-full h-full object-contain bg-white" data-alt="A smartphone screenshot showing a group chat or community comment where an apprentice shares their 'first bubble-free result'. The image shows a close-up of a kitchen corner with impeccable film work. Text in Russian. Authentic social media interaction design." src="assets/image-05.jpg"/>
 </div>
-</div>
-</div>
-</section>
-<!-- Film Tests Section -->
-<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container text-on-surface">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="max-w-3xl mx-auto text-center reveal">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Мы купили и протестировали 50 пленок</h2>
-<p class="font-body-lg text-on-surface-variant">Чтобы вы не тратили деньги на пленку, которая плохо тянется, пузырится, отклеивается по краям или не подходит для столешницы и фартука.</p>
-</div>
-<div class="mt-10 reveal delay-100">
-<img class="w-full rounded-2xl border border-border-light bg-white object-cover shadow-xl" data-alt="Кристина сидит среди множества рулонов декоративной пленки и образцов материалов после тестов для мастер-класса" loading="lazy" src="assets/proof/film-tests-kristina.jpg"/>
 </div>
 </div>
 </section>
