@@ -132,6 +132,9 @@
         .testimonial-card {
             width: min(58vw, 220px);
         }
+        .phone-review-card {
+            width: min(66vw, 230px);
+        }
         .no-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -180,6 +183,9 @@
         @media (min-width: 768px) {
             .testimonial-card {
                 width: 280px;
+            }
+            .phone-review-card {
+                width: 260px;
             }
         }
     </style>
@@ -444,7 +450,7 @@
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="max-w-3xl mx-auto text-center reveal">
 <h2 class="font-headline-lg text-primary mb-6">
-<span class="block text-[58px] md:text-[88px] leading-[0.9] font-bold">50 пленок</span>
+<span class="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-4xl md:text-6xl leading-none font-bold text-on-primary shadow-lg">50 пленок</span>
 <span class="mt-4 block text-headline-lg">мы купили и протестировали</span>
 </h2>
 <p class="font-body-lg text-on-surface-variant">Чтобы вы не тратили деньги на некачественную пленку, которая рвется, отклеивается, не выдерживает кипяток или не подходит для столешниц.</p>
@@ -452,44 +458,71 @@
 <div class="mt-10 reveal delay-100">
 <img class="w-full rounded-2xl border border-border-light bg-white object-cover shadow-xl" data-alt="Кристина сидит среди множества рулонов декоративной пленки и образцов материалов после тестов для мастер-класса" loading="lazy" src="assets/proof/film-tests-kristina.jpg"/>
 </div>
+<div class="mt-10 max-w-3xl mx-auto text-center reveal delay-200">
+<p class="font-body-lg text-on-surface-variant">И также я тестировала краски и грунтовки для моих мастер-классов: штукатурка и перекраска.</p>
+</div>
+<div class="mt-8 reveal delay-300">
+<img class="w-full rounded-2xl border border-border-light bg-white object-cover shadow-xl" data-alt="Кристина сидит среди тестируемых красок и грунтовок для мастер-классов по штукатурке и перекраске" loading="lazy" src="assets/proof/paint-tests-kristina.jpg"/>
+</div>
+</div>
+</section>
+<!-- Author Section -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-10 reveal">
+<h2 class="font-headline-lg text-headline-lg text-primary">Видеофрагменты мастер-класса</h2>
+</div>
+<div class="w-full max-w-[820px] mx-auto reveal">
+<div class="relative mx-auto">
+<div class="absolute -inset-3 bg-primary rounded-3xl -rotate-1 -z-10"></div>
+<div class="relative aspect-video rounded-2xl shadow-xl overflow-hidden bg-text-dark">
+<img class="w-full h-full object-cover object-center opacity-90" data-alt="Кристина показывает пленку на кухне во время съемки мастер-класса" src="assets/kristina-process.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10"></div>
+<button aria-label="Смотреть фрагмент мастер-класса" class="absolute inset-0 m-auto w-20 h-20 bg-white/90 text-primary rounded-full flex items-center justify-center shadow-xl transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute left-5 right-5 bottom-5 text-white">
+<div class="text-sm font-bold uppercase tracking-[0.12em] opacity-80">Фрагмент уроков.</div>
+<div class="font-headline-md text-headline-md">Клеим пленку на разные поверхности.</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <!-- Program Section -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop bg-primary-container text-on-primary-container" id="program">
 <div class="max-w-container-max mx-auto px-gutter">
 <h2 class="font-headline-lg text-headline-lg text-inverse-primary text-center mb-4 reveal">Программа мастер-класса</h2>
-<p class="text-on-primary-container/80 text-center max-w-2xl mx-auto mb-16 reveal">28 видеоуроков: от выбора пленки до сложных углов, тестов на столешнице и списка материалов, которые не стоит покупать.</p>
+<p class="text-on-primary-container/80 text-center max-w-2xl mx-auto mb-16 reveal">28 коротких (без воды) понятных видео уроков</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
 <!-- Module 1 -->
 <div class="flex gap-6 items-start reveal">
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">1</div>
 <div>
-<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Введение: почему пленка</h4>
-<p class="text-on-primary-container/80">С чего начать, какие поверхности можно обновить и как увидеть потенциал кухни до большого ремонта.</p>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Введение: чем хороша пленка?</h4>
 </div>
 </div>
 <!-- Module 2 -->
 <div class="flex gap-6 items-start reveal">
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">2</div>
 <div>
-<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Материалы и подготовка</h4>
-<p class="text-on-primary-container/80">Инструменты, обезжиривание, мыльная вода, фен и подготовка поверхности перед поклейкой.</p>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Материалы</h4>
 </div>
 </div>
 <!-- Module 3 -->
 <div class="flex gap-6 items-start reveal">
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">3</div>
 <div>
-<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Фасады: прямые и скругленные</h4>
-<p class="text-on-primary-container/80">Прямоугольные фасады, красивые уголки, задники, большие детали и скругленные фасады.</p>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Фасады: прямоугольные и закругленные</h4>
 </div>
 </div>
 <!-- Module 4 -->
 <div class="flex gap-6 items-start reveal">
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">4</div>
 <div>
-<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Нюансы и ошибки</h4>
-<p class="text-on-primary-container/80">Пузыри, заломы, липкий слой, отклеившийся край, рваный срез и помятая пленка.</p>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-2">Нюансы и разбор ошибок</h4>
+<p class="text-on-primary-container/80">Как убрать липкий слой, пузыри, заломы и что делать, если отрезали лишнее или пленка помята?</p>
 </div>
 </div>
 <!-- Module 5 -->
@@ -497,7 +530,7 @@
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">5</div>
 <div>
 <h4 class="font-headline-md text-headline-md text-on-primary mb-2">Столешница</h4>
-<p class="text-on-primary-container/80">Поклейка прямой и круглой столешницы, честный эксперимент и тесты на кипяток, кофе, губку и химию.</p>
+<p class="text-on-primary-container/80">Прямоугольная и скругленная столешница</p>
 </div>
 </div>
 <!-- Module 6 -->
@@ -505,7 +538,6 @@
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">6</div>
 <div>
 <h4 class="font-headline-md text-headline-md text-on-primary mb-2">Фартук</h4>
-<p class="text-on-primary-container/80">Как клеить фартук, что делать с уголками, теплом, жиром и зоной возле плиты.</p>
 </div>
 </div>
 <!-- Module 7 -->
@@ -513,52 +545,67 @@
 <div class="flex-shrink-0 w-12 h-12 bg-inverse-primary text-primary rounded-full flex items-center justify-center font-bold text-lg">7</div>
 <div>
 <h4 class="font-headline-md text-headline-md text-on-primary mb-2">Рекомендации пленок</h4>
-<p class="text-on-primary-container/80">Проверенные варианты для фасадов, столешницы, фартука и пола плюс список пленок, которые лучше не брать.</p>
+<p class="text-on-primary-container/80">Ссылки и артикулы на качественные антивандальные пленки</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Author Section -->
-<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<!-- Testimonials -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-alt">
 <div class="max-w-container-max mx-auto px-gutter">
-<div class="flex flex-col md:flex-row items-center gap-12">
-<div class="w-full md:w-1/2 reveal">
-<div class="relative max-w-[360px] md:max-w-none mx-auto">
-<div class="absolute -inset-4 bg-primary rounded-3xl -rotate-3 -z-10"></div>
-<div class="relative aspect-[9/16] rounded-2xl shadow-xl overflow-hidden bg-text-dark">
-<img class="w-full h-full object-cover object-center opacity-90" data-alt="Кристина показывает пленку на кухне во время съемки мастер-класса" src="assets/kristina-process.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10"></div>
-<button aria-label="Смотреть фрагмент мастер-класса" class="absolute inset-0 m-auto w-20 h-20 bg-white/90 text-primary rounded-full flex items-center justify-center shadow-xl transition-transform hover:scale-105 active:scale-95">
-<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</button>
-<div class="absolute left-5 right-5 bottom-5 text-white">
-<div class="text-sm font-bold uppercase tracking-[0.12em] opacity-80">фрагмент урока</div>
-<div class="font-headline-md text-headline-md">Пленка на реальной кухне</div>
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-10 reveal">Отзывы</h2>
+<div class="space-y-12">
+<div class="reveal">
+<h3 class="font-headline-md text-headline-md text-primary mb-5">Отзывы о пленке</h3>
+<div class="flex overflow-x-auto gap-4 md:gap-6 pb-4 no-scrollbar snap-x snap-mandatory">
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/image-03.jpg">
+<div class="rounded-[2rem] bg-text-dark p-2 shadow-xl">
+<div class="overflow-hidden rounded-[1.55rem] bg-white">
+<div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>10:45</span><span>●●●</span></div>
+<img alt="Отзыв ученицы о мастер-классе по пленке" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/image-03.jpg"/>
 </div>
 </div>
+</a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/image-06.jpg">
+<div class="rounded-[2rem] bg-text-dark p-2 shadow-xl">
+<div class="overflow-hidden rounded-[1.55rem] bg-white">
+<div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>14:38</span><span>●●●</span></div>
+<img alt="Отзыв ученицы о результате после мастер-класса по пленке" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/image-06.jpg"/>
 </div>
 </div>
-<div class="w-full md:w-1/2 reveal">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Кристина показывает процесс в видеоформате на реальных материалах</h2>
-<p class="font-body-lg mb-8">Мастер-класс построен вокруг практики, реальных движений руками, типичных ошибок и способов их исправления для идеального результата.</p>
-<div class="grid grid-cols-2 gap-4">
-<div class="p-4 bg-white rounded-xl shadow-sm">
-<span class="material-symbols-outlined text-primary mb-2">video_library</span>
-<p class="text-sm font-bold">Демонстрация на кухне</p>
+</a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/image-05.jpg">
+<div class="rounded-[2rem] bg-text-dark p-2 shadow-xl">
+<div class="overflow-hidden rounded-[1.55rem] bg-white">
+<div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>11:20</span><span>●●●</span></div>
+<img alt="Отзыв ученика о первом аккуратном результате без пузырей" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/image-05.jpg"/>
 </div>
-<div class="p-4 bg-white rounded-xl shadow-sm">
-<span class="material-symbols-outlined text-primary mb-2">error</span>
-<p class="text-sm font-bold">Разбор ошибок</p>
 </div>
-<div class="p-4 bg-white rounded-xl shadow-sm">
-<span class="material-symbols-outlined text-primary mb-2">checklist</span>
-<p class="text-sm font-bold">Список материалов</p>
+</a>
 </div>
-<div class="p-4 bg-white rounded-xl shadow-sm">
-<span class="material-symbols-outlined text-primary mb-2">pace</span>
-<p class="text-sm font-bold">Практичный темп</p>
 </div>
+<div class="reveal delay-100">
+<h3 class="font-headline-md text-headline-md text-primary mb-5">Отзывы о других МК и курсах my.love.dom</h3>
+<div class="flex overflow-x-auto gap-4 md:gap-6 pb-4 no-scrollbar snap-x snap-mandatory">
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-001.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>09:41</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-001.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-002.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>12:08</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-002.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-003.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>16:30</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-003.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-004.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>18:12</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-004.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-005.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>20:17</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-005.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-006.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>10:04</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-006.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-001.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>13:25</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-001.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-002.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>15:42</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-002.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-003.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>17:05</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-003.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-004.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>19:33</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-004.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-005.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>21:16</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-005.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-006.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>08:57</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-006.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-001.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>11:44</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-001.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-002.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>14:19</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-002.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-003.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>16:51</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-003.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-004.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>18:40</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-004.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-005.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>20:29</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-005.jpg"/></div></div></a>
+<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-006.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>22:03</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-006.jpg"/></div></div></a>
 </div>
 </div>
 </div>
@@ -567,69 +614,57 @@
 <!-- Video Section -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter">
 <div class="max-w-3xl mx-auto text-center reveal">
-<h2 class="font-headline-lg mb-6">Короткое видео перед покупкой</h2>
-<p class="text-on-surface-variant mb-12">Кристина показывает материал, результат и объясняет, кому подойдет мастер-класс.</p>
-<div class="relative max-w-[320px] mx-auto aspect-[9/16] rounded-[3rem] border-[12px] border-text-dark bg-text-dark overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover opacity-80" data-alt="A video thumbnail showing Kristina in her bright kitchen, holding a piece of finished film work up to the camera. There is a large, translucent 'Play' icon in the center. The lighting is bright and cheerful. The background is softly blurred. This is a 9:16 vertical video frame intended to look like an Instagram Reel or TikTok preview." src="assets/image-04.jpg"/>
-<button class="absolute inset-0 m-auto w-20 h-20 bg-primary/90 text-on-primary rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95 shadow-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-10">Как выбрать тариф</h2>
+<div class="relative w-full max-w-[760px] mx-auto">
+<div class="absolute -inset-3 bg-primary rounded-3xl -rotate-1 -z-10"></div>
+<div class="relative aspect-video rounded-2xl bg-text-dark overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover opacity-80" data-alt="Горизонтальный видеоанонс о том, как выбрать тариф мастер-класса." src="assets/image-04.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-text-dark/70 via-text-dark/15 to-transparent"></div>
+<button class="absolute inset-0 m-auto w-20 h-20 bg-primary/90 text-on-primary rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95 shadow-lg" type="button">
 <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
 </button>
+<div class="absolute left-5 bottom-5 text-left text-white">
+<div class="text-sm font-bold uppercase tracking-[0.12em] opacity-80">Видео</div>
+<div class="font-headline-md text-headline-md">Как выбрать тариф</div>
 </div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-alt">
-<div class="max-w-container-max mx-auto px-gutter">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-16 reveal">Что говорят ученики</h2>
-<div class="flex overflow-x-auto gap-4 md:gap-6 pb-8 no-scrollbar snap-x snap-mandatory reveal">
-<!-- Placeholder Review 1 -->
-<div class="testimonial-card aspect-[9/16] bg-white rounded-2xl shadow-sm border border-border-light flex-none overflow-hidden snap-start">
-<img class="w-full h-full object-cover object-center bg-white" data-alt="A realistic smartphone screenshot of a WhatsApp or Instagram direct message conversation. The message text is in Russian, expressing gratitude for the tutorial and showing a blurry background photo of a successful DIY project. The user interface elements of the messaging app are visible to enhance authenticity. Soft, pastel theme." src="assets/image-03.jpg"/>
-</div>
-<!-- Placeholder Review 2 -->
-<div class="testimonial-card aspect-[9/16] bg-white rounded-2xl shadow-sm border border-border-light flex-none overflow-hidden snap-start">
-<img class="w-full h-full object-contain bg-white" data-alt="A smartphone screenshot of a testimonial with a photo of a beautifully updated cabinet in a light blue shade. The text is enthusiastic, mentioning how easy the instructions were to follow. Real-looking Russian text, social media UI elements, high-quality photograph of the furniture result." src="assets/image-06.jpg"/>
-</div>
-<!-- Placeholder Review 3 -->
-<div class="testimonial-card aspect-[9/16] bg-white rounded-2xl shadow-sm border border-border-light flex-none overflow-hidden snap-start">
-<img class="w-full h-full object-contain bg-white" data-alt="A smartphone screenshot showing a group chat or community comment where an apprentice shares their 'first bubble-free result'. The image shows a close-up of a kitchen corner with impeccable film work. Text in Russian. Authentic social media interaction design." src="assets/image-05.jpg"/>
 </div>
 </div>
 </div>
 </section>
 <!-- Pricing Section -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto px-gutter" id="pricing">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4 reveal">Тарифы на обучение</h2>
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4 reveal">Тарифы</h2>
 <p class="max-w-2xl mx-auto text-center text-on-surface-variant mb-16 reveal">Чем выше тариф, тем дешевле вы получаете каждый мастер-класс.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
 <!-- Tariff 1 -->
 <div class="bg-surface-container-low p-8 rounded-2xl border-2 border-primary reveal flex flex-col">
-<h3 class="font-headline-md text-primary mb-2">МК «Пленка»</h3>
+<h3 class="font-headline-lg text-primary font-bold mb-3">1 тариф - МК пленка</h3>
+<div class="mb-4 inline-flex max-w-full rounded-full bg-primary/10 px-4 py-2 text-sm font-bold leading-snug text-primary">Сейчас цена со скидкой 67% по предзаказу.</div>
 <div class="mb-4">
 <span class="text-sm line-through text-on-surface-variant opacity-60">3 000 ₽</span>
 <div class="text-3xl font-bold text-primary">990 ₽</div>
 </div>
 <ul class="text-sm space-y-3 mb-8 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 28 видео уроков со всеми нюансами</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Фасады, столешница и фартук в одном МК</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Разбор ошибок: пузыри, заломы, отклеивание краев</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Список лучших пленок после теста 50 вариантов</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Список материалов</li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ навсегда</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ без VPN (на нашем сайте)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> 28 видеоуроков - пошаговая инструкция с нюансами и разбором ошибок</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ссылки на качественные пленки</li>
 <li class="flex items-center gap-2 text-[#b3261e]"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span> Без обратной связи</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК начнется 21 июля</li>
 </ul>
 <a class="w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Купить за 990 ₽</a>
 </div>
 <!-- Tariff 2 -->
 <div class="bg-white p-8 rounded-2xl border border-border-light reveal delay-100 flex flex-col">
-<h3 class="font-headline-md text-primary mb-2">Базовый сет</h3>
+<h3 class="font-headline-md text-primary mb-2">2 тариф - МК пленка + МК перекраска + МК штукатурка</h3>
 <div class="mb-4">
+<span class="text-sm line-through text-on-surface-variant opacity-60">9 000 ₽</span>
 <div class="text-3xl font-bold text-primary">3 990 ₽</div>
 </div>
 <ul class="text-sm space-y-3 mb-8 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК «Пленка»</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК «Перекраска»</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК «Штукатурка»</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Пленка»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Перекраска»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Штукатурка»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
 <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Подборки пленок под фасады, столешницу, фартук и плитку</li>
 <li class="flex items-center gap-2 text-[#b3261e]"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span> Без обратной связи</li>
 </ul>
@@ -639,8 +674,9 @@
 </div>
 </div>
 <!-- Tariff 3 -->
-<div class="bg-white p-8 rounded-2xl border border-border-light reveal delay-200 flex flex-col">
-<h3 class="font-headline-md text-primary mb-2">Все МК</h3>
+<div class="relative bg-white p-8 rounded-2xl border border-border-light reveal delay-200 flex flex-col overflow-hidden">
+<div class="absolute top-0 right-0 rounded-bl-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-on-primary">Оптимальный тариф</div>
+<h3 class="font-headline-md text-primary mb-2 pr-24">Все МК</h3>
 <div class="mb-4">
 <span class="text-sm line-through text-on-surface-variant opacity-60">6 000 ₽</span>
 <div class="text-3xl font-bold text-primary">5 990 ₽</div>
@@ -663,7 +699,7 @@
 <div class="absolute top-0 right-0 rounded-bl-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-on-primary">Самый выгодный</div>
 <h3 class="font-headline-md text-primary mb-2 pr-16">Комбо-мастер</h3>
 <div class="mb-4">
-<div class="text-3xl font-bold text-primary">7 690 ₽</div>
+<div class="text-3xl font-bold text-primary">6 990 ₽</div>
 </div>
 <ul class="text-sm space-y-3 mb-8 flex-grow">
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ремонт + Расхламление</li>
@@ -1096,6 +1132,14 @@
         }
 
         reviewCards.forEach(card => {
+            card.addEventListener('click', event => {
+                event.preventDefault();
+                const image = card.querySelector('img');
+                openReviewModal(card.getAttribute('href'), image?.alt);
+            });
+        });
+
+        document.querySelectorAll('[data-review-open]').forEach(card => {
             card.addEventListener('click', event => {
                 event.preventDefault();
                 const image = card.querySelector('img');
