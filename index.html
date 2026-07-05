@@ -132,8 +132,8 @@
         .testimonial-card {
             width: min(58vw, 220px);
         }
-        .phone-review-card {
-            width: min(66vw, 230px);
+        .plain-review-card {
+            width: min(72vw, 300px);
         }
         .no-scrollbar {
             -ms-overflow-style: none;
@@ -180,12 +180,89 @@
             background-image: url("assets/surfaces/table.jpg");
             background-position: 50% 50%;
         }
+        .pricing-card-title {
+            font-size: 26px;
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: 0;
+        }
+        .pricing-card-subtitle {
+            display: block;
+            margin-top: 6px;
+            color: #546251;
+            font-size: 16px;
+            line-height: 1.35;
+            font-weight: 700;
+        }
+        .pricing-discount-badge {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            padding: 12px 14px 12px 16px;
+            border: 1px solid rgba(47, 61, 41, 0.16);
+            border-left: 4px solid #546251;
+            border-radius: 14px;
+            background: rgba(216, 231, 209, 0.54);
+            color: #2f3d29;
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1.45;
+            text-align: left;
+            box-shadow: none;
+        }
+        .pricing-detail-hero {
+            color: #2f3d29;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 1.35;
+            text-transform: uppercase;
+        }
+        .pricing-detail-hero .material-symbols-outlined {
+            color: #147a3b;
+            font-size: 16px;
+            font-variation-settings: 'FILL' 1;
+        }
+        .pricing-count-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 24px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: #2f3d29;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 1;
+            white-space: nowrap;
+        }
+        .pricing-detail-outlined {
+            margin-top: 2px;
+            padding: 8px 10px;
+            border: 1.5px solid #147a3b;
+            border-radius: 12px;
+            background: rgba(232, 246, 236, 0.4);
+        }
+        .pricing-detail-divider {
+            height: 1px;
+            margin: 2px 0;
+            background: #DDE2DA;
+        }
+        .course-details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .course-details summary .material-symbols-outlined {
+            transition: transform 0.2s ease;
+        }
+        .course-details[open] summary .material-symbols-outlined {
+            transform: rotate(180deg);
+        }
         @media (min-width: 768px) {
             .testimonial-card {
                 width: 280px;
             }
-            .phone-review-card {
-                width: 260px;
+            .plain-review-card {
+                width: 300px;
             }
         }
     </style>
@@ -547,171 +624,6 @@
 </div>
 </div>
 </section>
-<!-- Testimonials -->
-<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-alt">
-<div class="max-w-container-max mx-auto px-gutter">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-10 reveal">Отзывы</h2>
-<div class="space-y-12">
-<div class="reveal">
-<h3 class="font-headline-md text-headline-md text-primary mb-5">Отзывы о пленке</h3>
-<div class="flex overflow-x-auto gap-4 md:gap-6 pb-4 no-scrollbar snap-x snap-mandatory">
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/image-03.jpg">
-<div class="rounded-[2rem] bg-text-dark p-2 shadow-xl">
-<div class="overflow-hidden rounded-[1.55rem] bg-white">
-<div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>10:45</span><span>●●●</span></div>
-<img alt="Отзыв ученицы о мастер-классе по пленке" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/image-03.jpg"/>
-</div>
-</div>
-</a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/image-06.jpg">
-<div class="rounded-[2rem] bg-text-dark p-2 shadow-xl">
-<div class="overflow-hidden rounded-[1.55rem] bg-white">
-<div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>14:38</span><span>●●●</span></div>
-<img alt="Отзыв ученицы о результате после мастер-класса по пленке" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/image-06.jpg"/>
-</div>
-</div>
-</a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/image-05.jpg">
-<div class="rounded-[2rem] bg-text-dark p-2 shadow-xl">
-<div class="overflow-hidden rounded-[1.55rem] bg-white">
-<div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>11:20</span><span>●●●</span></div>
-<img alt="Отзыв ученика о первом аккуратном результате без пузырей" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/image-05.jpg"/>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="reveal delay-100">
-<h3 class="font-headline-md text-headline-md text-primary mb-5">Отзывы о других МК и курсах my.love.dom</h3>
-<div class="flex overflow-x-auto gap-4 md:gap-6 pb-4 no-scrollbar snap-x snap-mandatory">
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-001.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>09:41</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-001.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-002.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>12:08</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-002.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-003.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>16:30</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-003.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-004.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>18:12</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-004.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-005.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>20:17</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-005.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-006.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>10:04</span><span>●●●</span></div><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/budget-006.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-001.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>13:25</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-001.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-002.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>15:42</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-002.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-003.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>17:05</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-003.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-004.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>19:33</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-004.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-005.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>21:16</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-005.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-006.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>08:57</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/perekras-006.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-001.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>11:44</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-001.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-002.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>14:19</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-002.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-003.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>16:51</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-003.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-004.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>18:40</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-004.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-005.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>20:29</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-005.jpg"/></div></div></a>
-<a class="phone-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-006.jpg"><div class="rounded-[2rem] bg-text-dark p-2 shadow-xl"><div class="overflow-hidden rounded-[1.55rem] bg-white"><div class="flex items-center justify-between px-4 py-2 text-[10px] font-bold text-text-dark"><span>22:03</span><span>●●●</span></div><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[9/16] w-full bg-white object-contain" loading="lazy" src="assets/reviews/shtukaturka-006.jpg"/></div></div></a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Video Section -->
-<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter">
-<div class="max-w-3xl mx-auto text-center reveal">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-10">Как выбрать тариф</h2>
-<div class="relative w-full max-w-[760px] mx-auto">
-<div class="absolute -inset-3 bg-primary rounded-3xl -rotate-1 -z-10"></div>
-<div class="relative aspect-video rounded-2xl bg-text-dark overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover opacity-80" data-alt="Горизонтальный видеоанонс о том, как выбрать тариф мастер-класса." src="assets/image-04.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-text-dark/70 via-text-dark/15 to-transparent"></div>
-<button class="absolute inset-0 m-auto w-20 h-20 bg-primary/90 text-on-primary rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95 shadow-lg" type="button">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</button>
-<div class="absolute left-5 bottom-5 text-left text-white">
-<div class="text-sm font-bold uppercase tracking-[0.12em] opacity-80">Видео</div>
-<div class="font-headline-md text-headline-md">Как выбрать тариф</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing Section -->
-<section class="py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto px-gutter" id="pricing">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4 reveal">Тарифы</h2>
-<p class="max-w-2xl mx-auto text-center text-on-surface-variant mb-16 reveal">Чем выше тариф, тем дешевле вы получаете каждый мастер-класс.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-<!-- Tariff 1 -->
-<div class="bg-surface-container-low p-8 rounded-2xl border-2 border-primary reveal flex flex-col">
-<h3 class="font-headline-lg text-primary font-bold mb-3">1 тариф - МК пленка</h3>
-<div class="mb-4 inline-flex max-w-full rounded-full bg-primary/10 px-4 py-2 text-sm font-bold leading-snug text-primary">Сейчас цена со скидкой 67% по предзаказу.</div>
-<div class="mb-4">
-<span class="text-sm line-through text-on-surface-variant opacity-60">3 000 ₽</span>
-<div class="text-3xl font-bold text-primary">990 ₽</div>
-</div>
-<ul class="text-sm space-y-3 mb-8 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ навсегда</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ без VPN (на нашем сайте)</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> 28 видеоуроков - пошаговая инструкция с нюансами и разбором ошибок</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ссылки на качественные пленки</li>
-<li class="flex items-center gap-2 text-[#b3261e]"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span> Без обратной связи</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК начнется 21 июля</li>
-</ul>
-<a class="w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Купить за 990 ₽</a>
-</div>
-<!-- Tariff 2 -->
-<div class="bg-white p-8 rounded-2xl border border-border-light reveal delay-100 flex flex-col">
-<h3 class="font-headline-md text-primary mb-2">2 тариф - МК пленка + МК перекраска + МК штукатурка</h3>
-<div class="mb-4">
-<span class="text-sm line-through text-on-surface-variant opacity-60">9 000 ₽</span>
-<div class="text-3xl font-bold text-primary">3 990 ₽</div>
-</div>
-<ul class="text-sm space-y-3 mb-8 flex-grow">
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Пленка»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Перекраска»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Штукатурка»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Подборки пленок под фасады, столешницу, фартук и плитку</li>
-<li class="flex items-center gap-2 text-[#b3261e]"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span> Без обратной связи</li>
-</ul>
-<div class="space-y-3">
-<a class="block w-full py-4 border border-primary text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">Купить сет</a>
-<a class="block w-full py-3 bg-surface-container-low text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">В рассрочку от 333/мес</a>
-</div>
-</div>
-<!-- Tariff 3 -->
-<div class="relative bg-white p-8 rounded-2xl border border-border-light reveal delay-200 flex flex-col overflow-hidden">
-<div class="absolute top-0 right-0 rounded-bl-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-on-primary">Оптимальный тариф</div>
-<h3 class="font-headline-md text-primary mb-2 pr-24">Все МК</h3>
-<div class="mb-4">
-<span class="text-sm line-through text-on-surface-variant opacity-60">6 000 ₽</span>
-<div class="text-3xl font-bold text-primary">5 990 ₽</div>
-</div>
-<ul class="text-sm space-y-3 mb-8 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Все курсы по обновлению</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Гайды по декору</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ранний доступ к новинкам</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Подборки пленок под фасады, столешницу, фартук и плитку</li>
-<li class="flex items-start gap-2 rounded-lg bg-[#e8f6ec] px-3 py-2 text-[#147a3b] font-bold -mx-3"><span class="material-symbols-outlined text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span> ЧАТ с общением</li>
-<li class="flex items-start gap-2 rounded-lg bg-[#e8f6ec] px-3 py-2 text-[#147a3b] font-bold -mx-3"><span class="material-symbols-outlined text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span> Обратная связь от куратора в чате</li>
-</ul>
-<div class="space-y-3">
-<a class="block w-full py-4 border border-primary text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">Выбрать все</a>
-<a class="block w-full py-3 bg-surface-container-low text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">В рассрочку от 499/мес</a>
-</div>
-</div>
-<!-- Tariff 4 -->
-<div class="relative bg-white p-8 rounded-2xl border-2 border-primary shadow-xl reveal delay-300 flex flex-col overflow-hidden">
-<div class="absolute top-0 right-0 rounded-bl-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-on-primary">Самый выгодный</div>
-<h3 class="font-headline-md text-primary mb-2 pr-16">Комбо-мастер</h3>
-<div class="mb-4">
-<div class="text-3xl font-bold text-primary">6 990 ₽</div>
-</div>
-<ul class="text-sm space-y-3 mb-8 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ремонт + Расхламление</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК «Дерево»</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Закрытый чат</li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Подборки пленок под фасады, столешницу, фартук и плитку</li>
-<li class="flex items-start gap-2 rounded-lg bg-[#e8f6ec] px-3 py-2 text-[#147a3b] font-bold -mx-3"><span class="material-symbols-outlined text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span> ЧАТ с общением</li>
-<li class="flex items-start gap-2 rounded-lg bg-[#e8f6ec] px-3 py-2 text-[#147a3b] font-bold -mx-3"><span class="material-symbols-outlined text-sm mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span> Обратная связь от куратора в чате</li>
-</ul>
-<div class="space-y-3">
-<a class="block w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Купить комбо</a>
-<a class="block w-full py-3 bg-surface-container-low text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">В рассрочку от 583/мес</a>
-</div>
-</div>
-</div>
-</section>
 <!-- Student Reviews Section -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-alt" id="student-reviews">
 <div class="max-w-container-max mx-auto px-gutter">
@@ -721,14 +633,24 @@
 <p class="font-body-lg text-on-surface-variant">Люди уже обновляют кухни, мебель и стены по нашим мастер-классам. Вот что пишут после обучения.</p>
 </div>
 <div class="flex flex-wrap justify-center gap-2 mt-10 mb-8 reveal" aria-label="Фильтр отзывов">
-<button aria-pressed="true" class="review-tab rounded-full border border-primary bg-primary px-4 py-2 text-sm font-bold text-on-primary transition-colors" data-review-tab="all" type="button">Все</button>
+<button aria-pressed="false" class="review-tab rounded-full border border-border-light bg-white px-4 py-2 text-sm font-bold text-primary transition-colors hover:border-primary" data-review-tab="film" type="button">Пленка</button>
+<button aria-pressed="false" class="review-tab rounded-full border border-border-light bg-white px-4 py-2 text-sm font-bold text-primary transition-colors hover:border-primary" data-review-tab="shtukaturka" type="button">Штукатурка</button>
 <button aria-pressed="false" class="review-tab rounded-full border border-border-light bg-white px-4 py-2 text-sm font-bold text-primary transition-colors hover:border-primary" data-review-tab="budget" type="button">Бюджетный ремонт</button>
 <button aria-pressed="false" class="review-tab rounded-full border border-border-light bg-white px-4 py-2 text-sm font-bold text-primary transition-colors hover:border-primary" data-review-tab="perekras" type="button">Перекраска</button>
-<button aria-pressed="false" class="review-tab rounded-full border border-border-light bg-white px-4 py-2 text-sm font-bold text-primary transition-colors hover:border-primary" data-review-tab="shtukaturka" type="button">Штукатурка</button>
+<button aria-pressed="true" class="review-tab rounded-full border border-primary bg-primary px-4 py-2 text-sm font-bold text-on-primary transition-colors" data-review-tab="all" type="button">Все</button>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 reveal" data-review-grid>
-<a class="group block cursor-zoom-in aspect-[3/4] overflow-hidden rounded-2xl border border-border-light bg-white p-1 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg" data-review-card="budget" href="assets/reviews/budget-001.jpg">
-<img alt="Отзыв ученика курса Бюджетный ремонт" class="h-full w-full rounded-[18px] bg-white object-contain" loading="lazy" src="assets/reviews/budget-001.jpg"/>
+<a class="group block cursor-zoom-in aspect-[3/4] overflow-hidden rounded-2xl border border-border-light bg-white p-1 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg" data-review-card="film" href="assets/reviews/film-kitchen-message-before-after.jpg">
+<img alt="Отзыв о мастер-классе Пленка: кухня до и после с сообщением ученицы" class="h-full w-full rounded-[18px] bg-white object-contain" loading="lazy" src="assets/reviews/film-kitchen-message-before-after.jpg"/>
+</a>
+<a class="group block cursor-zoom-in aspect-[3/4] overflow-hidden rounded-2xl border border-border-light bg-white p-1 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg" data-review-card="film" href="assets/reviews/film-kitchen-before-after.jpg">
+<img alt="Отзыв о мастер-классе Пленка: кухня до и после" class="h-full w-full rounded-[18px] bg-white object-contain" loading="lazy" src="assets/reviews/film-kitchen-before-after.jpg"/>
+</a>
+<a class="group block cursor-zoom-in aspect-[3/4] overflow-hidden rounded-2xl border border-border-light bg-white p-1 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg" data-review-card="film" href="assets/reviews/film-grey-kitchen.jpg">
+<img alt="Отзыв о мастер-классе Пленка: серая кухня спустя два года" class="h-full w-full rounded-[18px] bg-white object-contain" loading="lazy" src="assets/reviews/film-grey-kitchen.jpg"/>
+</a>
+<a class="group block cursor-zoom-in aspect-[3/4] overflow-hidden rounded-2xl border border-border-light bg-white p-1 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg" data-review-card="film" href="assets/reviews/remont-door-review.jpg">
+<img alt="Отзыв о мастер-классе Пленка: дверь до и после" class="h-full w-full rounded-[18px] bg-white object-contain" loading="lazy" src="assets/reviews/remont-door-review.jpg"/>
 </a>
 <a class="group block cursor-zoom-in aspect-[3/4] overflow-hidden rounded-2xl border border-border-light bg-white p-1 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg" data-review-card="budget" href="assets/reviews/budget-002.jpg">
 <img alt="Отзыв ученика курса Бюджетный ремонт" class="h-full w-full rounded-[18px] bg-white object-contain" loading="lazy" src="assets/reviews/budget-002.jpg"/>
@@ -784,6 +706,180 @@
 </div>
 <div class="mt-8 text-center reveal">
 <button class="rounded-xl bg-white px-8 py-4 font-bold text-primary shadow-sm transition-colors hover:bg-surface-variant" data-review-more type="button">Показать еще отзывы</button>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-alt">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-10 reveal">Отзывы</h2>
+<div class="space-y-12">
+<div class="reveal">
+<h3 class="font-headline-md text-headline-md text-primary mb-5">Все отзывы по пленке</h3>
+<div class="flex overflow-x-auto gap-4 md:gap-6 pb-4 no-scrollbar snap-x snap-mandatory">
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/film-kitchen-message-before-after.jpg">
+<img alt="Отзыв о пленке: кухня до и после с сообщением ученицы" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/film-kitchen-message-before-after.jpg"/>
+</a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/film-kitchen-before-after.jpg">
+<img alt="Отзыв о пленке: кухня до и после" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/film-kitchen-before-after.jpg"/>
+</a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/film-grey-kitchen.jpg">
+<img alt="Отзыв о пленке: серая кухня спустя два года" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/film-grey-kitchen.jpg"/>
+</a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/remont-door-review.jpg"><img alt="Отзыв ученицы: дверь до и после" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/remont-door-review.jpg"/></a>
+</div>
+</div>
+<div class="reveal delay-100">
+<h3 class="font-headline-md text-headline-md text-primary mb-5">Отзывы о других МК и курсах my.love.dom</h3>
+<div class="flex overflow-x-auto gap-4 md:gap-6 pb-4 no-scrollbar snap-x snap-mandatory">
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-002.jpg"><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/budget-002.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-003.jpg"><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/budget-003.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-004.jpg"><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/budget-004.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-005.jpg"><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/budget-005.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/budget-006.jpg"><img alt="Отзыв ученика курса Бюджетный ремонт" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/budget-006.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-001.jpg"><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/perekras-001.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-002.jpg"><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/perekras-002.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-003.jpg"><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/perekras-003.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-004.jpg"><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/perekras-004.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-005.jpg"><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/perekras-005.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/perekras-006.jpg"><img alt="Отзыв ученика мастер-класса Перекраска" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/perekras-006.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-001.jpg"><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/shtukaturka-001.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-002.jpg"><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/shtukaturka-002.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-003.jpg"><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/shtukaturka-003.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-004.jpg"><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/shtukaturka-004.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-005.jpg"><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/shtukaturka-005.jpg"/></a>
+<a class="plain-review-card flex-none snap-start block cursor-zoom-in" data-review-open href="assets/reviews/shtukaturka-006.jpg"><img alt="Отзыв ученика мастер-класса Штукатурка" class="aspect-[4/5] w-full rounded-2xl bg-white object-contain shadow-md" loading="lazy" src="assets/reviews/shtukaturka-006.jpg"/></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter">
+<div class="max-w-3xl mx-auto text-center reveal">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-10">Как выбрать тариф</h2>
+<div class="relative w-full max-w-[760px] mx-auto">
+<div class="absolute -inset-3 bg-primary rounded-3xl -rotate-1 -z-10"></div>
+<div class="relative aspect-video rounded-2xl bg-text-dark overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover opacity-80" data-alt="Горизонтальный видеоанонс о том, как выбрать тариф мастер-класса." src="assets/image-04.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-text-dark/70 via-text-dark/15 to-transparent"></div>
+<button class="absolute inset-0 m-auto w-20 h-20 bg-primary/90 text-on-primary rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95 shadow-lg" type="button">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute left-5 bottom-5 text-left text-white">
+<div class="text-sm font-bold uppercase tracking-[0.12em] opacity-80">Видео</div>
+<div class="font-headline-md text-headline-md">Как выбрать тариф</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop max-w-container-max mx-auto px-gutter" id="pricing">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4 reveal">Тарифы</h2>
+<p class="max-w-2xl mx-auto text-center text-on-surface-variant mb-16 reveal">Чем выше тариф, тем дешевле вы получаете каждый мастер-класс.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+<!-- Tariff 1 -->
+<div class="bg-surface-container-low p-8 rounded-2xl border-2 border-primary reveal flex flex-col">
+<h3 class="pricing-card-title text-primary mb-3">1 тариф - МК ПЛЕНКА</h3>
+<div class="pricing-discount-badge mb-5">Сейчас цена со скидкой 67% по предзаказу.</div>
+<div class="mb-4">
+<span class="text-sm line-through text-on-surface-variant opacity-60">3 000 ₽</span>
+<div class="text-3xl font-bold text-primary">990 ₽</div>
+</div>
+<ul class="text-sm space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ навсегда</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ без VPN (на нашем сайте)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> 28 видеоуроков - пошаговая инструкция с нюансами и разбором ошибок</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Ссылки на качественные пленки</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Итоги теста 50 пленок</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> МК начнется 21 июля</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Если вы у нас в курсе "Бюджетный ремонт", то этот МК у вас 🎁 в канале «Уроки».</li>
+<li class="flex items-center gap-2 text-[#b3261e]"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span> Без обратной связи</li>
+</ul>
+<a class="w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Купить за 990 ₽</a>
+</div>
+<!-- Tariff 2 -->
+<div class="bg-surface-container-low p-8 rounded-2xl border-2 border-primary reveal delay-100 flex flex-col">
+<h3 class="pricing-card-title text-primary mb-3">2 тариф - 3 МК<span class="pricing-card-subtitle">МК-пленка + МК-перекраска + МК-штукатурка</span></h3>
+<div class="mb-4">
+<span class="text-sm line-through text-on-surface-variant opacity-60">9 000 ₽</span>
+<div class="text-3xl font-bold text-primary">3 990 ₽</div>
+</div>
+<ul class="text-sm space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ к урокам навсегда</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Доступ без VPN</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>МК «Пленка»<span class="block text-xs text-on-surface-variant">Обычная цена: 2 990 рублей</span></span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><details class="course-details flex-1"><summary class="flex cursor-pointer list-none items-start justify-between gap-2 font-semibold text-primary"><span>МК «Перекраска»<span class="block text-xs font-normal text-on-surface-variant">Обычная цена: 2 990 рублей</span></span><span class="material-symbols-outlined text-sm">expand_more</span></summary><div class="mt-3 rounded-xl border border-border-light bg-white/70 px-4 py-3 text-xs leading-relaxed text-on-surface-variant"><ul class="list-disc space-y-2 pl-4"><li>Практическое руководство о том, как перекрасить кухню, плитку, двери, пластик, окна, любую мебель.</li><li>Легко, бюджетно и своими руками.</li></ul></div></details></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><details class="course-details flex-1"><summary class="flex cursor-pointer list-none items-start justify-between gap-2 font-semibold text-primary"><span>МК «Штукатурка»<span class="block text-xs font-normal text-on-surface-variant">Обычная цена: 2 990 рублей</span></span><span class="material-symbols-outlined text-sm">expand_more</span></summary><div class="mt-3 rounded-xl border border-border-light bg-white/70 px-4 py-3 text-xs leading-relaxed text-on-surface-variant"><ul class="list-disc space-y-2 pl-4"><li>Дешевый, прочный и влагостойкий метод обновить стены даже в ванной за 2-3 дня.</li><li>Пошаговое руководство (гайд+видео).</li><li>Можно даже на кривые стены, на плитку и масляную краску, на ОСБ, гипсокартон, бетон.</li></ul></div></details></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span> Если вы у нас на курсе «Бюджетный ремонт», то все эти МК у вас в Подарок 🎁 в канале уроков.</li>
+<li class="flex items-center gap-2 text-[#b3261e]"><span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span> Без обратной связи</li>
+</ul>
+<div class="space-y-3">
+<a class="block w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Получить 3 МК</a>
+<a class="block w-full py-3 border border-border-light bg-white/70 text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">В рассрочку от 333/мес</a>
+</div>
+</div>
+<!-- Tariff 3 -->
+<div class="relative bg-surface-container-low p-8 rounded-2xl border-2 border-primary reveal delay-200 flex flex-col overflow-hidden">
+<div class="absolute top-0 right-0 rounded-bl-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-on-primary">Оптимальный тариф</div>
+<h3 class="pricing-card-title text-primary mb-3 pr-24">3 тариф - курс «Бюджетный ремонт»</h3>
+<div class="mb-4">
+<span class="text-sm line-through text-on-surface-variant opacity-60">9 990 ₽</span>
+<div class="text-3xl font-bold text-primary">5 990 ₽</div>
+</div>
+<ul class="text-sm space-y-3 mb-8 flex-grow">
+<li class="pricing-detail-hero flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Все, что есть в 1 и 2 тарифах</span></li>
+<li class="pricing-detail-hero flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span><span class="pricing-count-badge">+30 МК</span> по бюджетному ремонту</span></li>
+<li class="pricing-detail-hero flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Доступ к урокам навсегда</span></li>
+<li class="pricing-detail-hero flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Доступ без VPN</span></li>
+<li class="pricing-detail-hero pricing-detail-outlined flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Чат общения в Telegram и VK</span></li>
+<li class="pricing-detail-hero pricing-detail-outlined flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Обратная связь от куратора в чате</span></li>
+<li class="pricing-detail-divider" aria-hidden="true"></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Готовый пошаговый план ремонта, распределенный по комнатам</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Научитесь делать стильную новую кухню за 15 тыс.</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Научитесь обновлять старую кухню за 3-4 тыс.</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Научитесь обновлять плитку в ванной за 3,5 тыс. руб. и 2 часа без грязи, пыли и даже краски.</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>2 способа заменить пол в любой комнате за 2 часа бюджетно</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Научитесь перекрашивать плитку, двери, кухню и другие поверхности</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Узнаете, как выгодно заменить или апгрейдить столешницу на кухне</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Узнаете, как обклеивать кухню пленкой</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Узнаете 4 способа сделать красивый фартук на кухню</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Узнаете 4 простых правила уютного дизайна, с которыми дизайн сможет сделать каждый</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Мастер-классы по изготовлению и реставрации мебели: диван, стол, тумба под раковину, изголовье кровати и другое</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Узнаете, как выгодно закупать материалы для ремонта</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Научитесь делать дизайн в простой программе за 2 часа с нуля</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Получите навык хоумстейджинга и сможете продать или сдать квартиру быстрее и дороже с минимальными вложениями</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>3 рецепта меловых красок</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>Тесты покупных красок и пленок</span></li>
+<li class="flex items-start gap-2 text-xs leading-relaxed text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><span>После покупки вы сразу получаете уроки и доступ в чат</span></li>
+</ul>
+<div class="space-y-3">
+<a class="block w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Купить курс ремонт</a>
+<a class="block w-full py-3 border border-border-light bg-white/70 text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">В рассрочку от 499/мес</a>
+</div>
+</div>
+<!-- Tariff 4 -->
+<div class="relative bg-surface-container-low p-8 rounded-2xl border-2 border-primary shadow-xl reveal delay-300 flex flex-col overflow-hidden">
+<div class="absolute top-0 right-0 rounded-bl-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-[0.08em] text-on-primary">Самый выгодный</div>
+<h3 class="pricing-card-title text-primary mb-3 pr-16">4 ТАРИФ - КОМБО</h3>
+<div class="mb-4">
+<span class="text-sm line-through text-on-surface-variant opacity-60">12 457 рублей</span>
+<div class="text-3xl font-bold text-primary">6 990 ₽</div>
+</div>
+<ul class="text-sm space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Все, что в других тарифах</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><details class="course-details flex-1"><summary class="flex cursor-pointer list-none items-start justify-between gap-2 font-semibold text-primary"><span>Мини-курс «Волшебное расхламление дома»<span class="block text-xs font-normal text-on-surface-variant">Обычная цена: 1 190 руб.</span></span><span class="material-symbols-outlined text-sm">expand_more</span></summary><div class="mt-3 rounded-xl border border-border-light bg-white/70 px-4 py-3 text-xs leading-relaxed text-on-surface-variant"><ul class="list-disc space-y-2 pl-4"><li>11 видео-уроков по расхламлению дома по книге Мари Кондо</li><li>Чек-лист расхламления</li><li>Доступ к урокам навсегда</li><li>Видео: 14 действий денежного изобилия</li><li>ЧАТ с единомышленниками в Telegram</li></ul><p class="mt-3">Бережная работа с собой через работу со своим пространством.</p><p class="mt-2">Привлекаем деньги через расхламление в 2026 год.</p></div></details></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><details class="course-details flex-1"><summary class="flex cursor-pointer list-none items-start justify-between gap-2 font-semibold text-primary"><span>МК «Дерево за 1000 руб. вместо 10000 руб.»<span class="block text-xs font-normal text-on-surface-variant">Обычная цена: 777 руб.</span></span><span class="material-symbols-outlined text-sm">expand_more</span></summary><div class="mt-3 rounded-xl border border-border-light bg-white/70 px-4 py-3 text-xs leading-relaxed text-on-surface-variant"><ul class="list-disc space-y-2 pl-4"><li>5 видео: процесс создания искусственного дерева с нюансами</li><li>Где выгоднее в 2-3 раза покупать искусственную зелень для дерева и других поделок</li><li>Более 30 магазинов по России и Казахстану с доставкой и офлайн</li><li>Стоимость дерева в магазине 10000 руб., себестоимость по мастер-классу около 1000 руб.</li><li>ЧАТ единомышленников</li></ul></div></details></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span><details class="course-details flex-1"><summary class="flex cursor-pointer list-none items-start justify-between gap-2 font-semibold text-primary"><span>МК «Наклейки (порядок в доме)»<span class="block text-xs font-normal text-on-surface-variant">Обычная цена: 490 руб.</span></span><span class="material-symbols-outlined text-sm">expand_more</span></summary><div class="mt-3 rounded-xl border border-border-light bg-white/70 px-4 py-3 text-xs leading-relaxed text-on-surface-variant"><p class="mb-2">На мастер-классе вы узнаете:</p><ul class="list-disc space-y-2 pl-4"><li>364 шаблона наклеек для распечатки</li><li>Видео-урок по созданию своего индивидуального дизайна наклеек</li><li>9 способов применения наклеек в интерьере</li><li>Бонусный мастер-класс по интерьерным наклейкам на стену и холодильник</li></ul></div></details></li>
+<li class="pricing-detail-hero pricing-detail-outlined flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Доступ навсегда</span></li>
+<li class="pricing-detail-hero pricing-detail-outlined flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>ЧАТ с общением</span></li>
+<li class="pricing-detail-hero pricing-detail-outlined flex items-start gap-2"><span class="material-symbols-outlined mt-0.5">check_circle</span><span>Обратная связь от куратора в чате</span></li>
+</ul>
+<div class="space-y-3">
+<a class="block w-full py-4 bg-primary text-on-primary rounded-xl text-center font-bold hover:bg-button-hover transition-colors" href="#">Купить комбо</a>
+<a class="block w-full py-3 border border-border-light bg-white/70 text-primary rounded-xl text-center font-bold hover:bg-surface-variant transition-colors" href="#">В рассрочку от 583/мес</a>
+</div>
 </div>
 </div>
 </section>
@@ -904,9 +1000,9 @@
 <!-- Final CTA -->
 <section class="py-section-padding-mobile md:py-section-padding-desktop bg-primary text-on-primary text-center relative overflow-hidden">
 <div class="max-w-2xl mx-auto px-gutter relative z-10 reveal">
-<h2 class="font-headline-lg mb-6">Заберите МК «Пленка» сейчас и подготовьтесь к аккуратной переделке без большого ремонта</h2>
+<h2 class="font-headline-lg mb-6">Можно не копить годами на новую кухню и ремонт, а сделать красиво и уютно прямо сейчас. У вас все получится ❤️</h2>
 <a class="inline-block px-12 py-5 bg-white text-primary rounded-xl font-headline-md hover:bg-surface-variant transition-colors shadow-lg" href="#pricing">
-                    Выбрать тариф
+                    Идти к дому мечты
                 </a>
 </div>
 <!-- Atmospheric circle decor -->
